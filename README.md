@@ -3,10 +3,10 @@ newspaper project with all components as submodules for easier handling
 
 For now run these commands to get a buildable tree:
 
-    export OPTIONS="--depth 1"
-    git clone $OPTIONS $OPTIONS https://github.com/statsbiblioteket/sbforge-parent.git
+    export OPTIONS=""
+    (git clone $OPTIONS $OPTIONS https://github.com/statsbiblioteket/sbforge-parent.git && git -C sbforge-parent checkout sbforge-parent-18 )
     (cd sbforge-parent && git clone $OPTIONS https://github.com/statsbiblioteket/sbutil.git)
-    (cd sbforge-parent && git clone $OPTIONS https://github.com/statsbiblioteket/newspaper-parent )
+    (cd sbforge-parent && git clone $OPTIONS https://github.com/statsbiblioteket/newspaper-parent && git -C newspaper-parent checkout newspaper-parent-1.5)
     (cd sbforge-parent/newspaper-parent && git clone $OPTIONS https://github.com/statsbiblioteket/newspaper-batch-event-framework )
     (cd sbforge-parent/newspaper-parent && git clone $OPTIONS https://github.com/statsbiblioteket/newspaper-batch-metadata-checker )
     (cd sbforge-parent/newspaper-parent && git clone $OPTIONS https://github.com/statsbiblioteket/newspaper-bitrepository-ingester)
