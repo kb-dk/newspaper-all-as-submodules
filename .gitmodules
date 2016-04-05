@@ -1,54 +1,57 @@
 [submodule "newspaper-batch-event-framework"]
-	path = newspaper-batch-event-framework
+	path = sbforge-parent/newspaper-parent/newspaper-batch-event-framework
 	url = https://github.com/statsbiblioteket/newspaper-batch-event-framework
 [submodule "newspaper-batch-metadata-checker"]
-	path = newspaper-batch-metadata-checker
+	path = sbforge-parent/newspaper-parent/newspaper-batch-metadata-checker
 	url = https://github.com/statsbiblioteket/newspaper-batch-metadata-checker
 [submodule "newspaper-batch-structure-checker"]
-	path = newspaper-batch-structure-checker
+	path = sbforge-parent/newspaper-parent/newspaper-batch-structure-checker
 	url = https://github.com/statsbiblioteket/newspaper-batch-structure-checker
 [submodule "newspaper-bitrepository-ingester"]
-	path = newspaper-bitrepository-ingester
+	path = sbforge-parent/newspaper-parent/newspaper-bitrepository-ingester
 	url = https://github.com/statsbiblioteket/newspaper-bitrepository-ingester
 [submodule "doms-server"]
-	path = doms-server
+	path = doms-parent/doms-server
 	url = https://github.com/statsbiblioteket/doms-server.git
 [submodule "newspaper-digitisation-process-monitor"]
-	path = newspaper-digitisation-process-monitor
+	path = sbforge-parent/newspaper-parent/newspaper-digitisation-process-monitor
 	url = https://github.com/statsbiblioteket/newspaper-digitisation-process-monitor
 [submodule "newspaper-md5-checker"]
-	path = newspaper-md5-checker
+	path = sbforge-parent/newspaper-parent/newspaper-md5-checker
 	url = https://github.com/statsbiblioteket/newspaper-md5-checker
 [submodule "newspaper-mfpak-integration"]
-	path = newspaper-mfpak-integration
+	path = sbforge-parent/newspaper-parent/newspaper-mfpak-integration
 	url = https://github.com/statsbiblioteket/newspaper-mfpak-integration
 [submodule "newspaper-prompt-doms-ingester"]
-	path = newspaper-prompt-doms-ingester
+	path = sbforge-parent/newspaper-parent/newspaper-prompt-doms-ingester
 	url = https://github.com/statsbiblioteket/newspaper-prompt-doms-ingester
 [submodule "newspaper-workflow-restart-trigger"]
-	path = newspaper-workflow-restart-trigger
+	path = sbforge-parent/newspaper-parent/newspaper-workflow-restart-trigger
 	url = https://github.com/statsbiblioteket/newspaper-workflow-restart-trigger
 [submodule "newspaper-parent"]
-	path = newspaper-parent
+	path = sbforge-parent/newspaper-parent
 	url = https://github.com/statsbiblioteket/newspaper-parent
 [submodule "newspaper-ninestars-QA-suite"]
-	path = newspaper-ninestars-QA-suite
+	path = sbforge-parent/newspaper-parent/newspaper-ninestars-QA-suite
 	url = https://github.com/statsbiblioteket/newspaper-ninestars-QA-suite
 [submodule "newspaper-summa-batch-object-index"]
-	path = newspaper-summa-batch-object-index
+	path = sbforge-parent/newspaper-parent/newspaper-summa-batch-object-index
 	url = https://github.com/statsbiblioteket/newspaper-summa-batch-object-index
 [submodule "xmlTapesForFedora"]
-	path = xmlTapesForFedora
+	path = doms-parent/xmlTapesForFedora
 	url = https://github.com/statsbiblioteket/xmlTapesForFedora
 [submodule "newspaper-delayed-batch-alerter"]
-	path = newspaper-delayed-batch-alerter
+	path = sbforge-parent/newspaper-parent/newspaper-delayed-batch-alerter
 	url = https://github.com/statsbiblioteket/newspaper-delayed-batch-alerter
 [submodule "newspaper-statistics"]
-	path = newspaper-statistics
+	path = sbforge-parent/newspaper-parent/newspaper-statistics
 	url = https://github.com/statsbiblioteket/newspaper-statistics
 [submodule "sbutil"]
-	path = sbutil
+	path = sbforge-parent/sbutil
 	url = https://github.com/statsbiblioteket/sbutil.git
 [submodule "sbforge-parent"]
 	path = sbforge-parent
 	url = https://github.com/statsbiblioteket/sbforge-parent.git
+[submodule "doms-parent"]
+	path = doms-parent
+	url = git@github.com:statsbiblioteket/doms-parent.git

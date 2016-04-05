@@ -8,23 +8,23 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>doms-server</module>
-        <module>newspaper-batch-event-framework</module>
-        <module>newspaper-batch-metadata-checker</module>
-        <module>newspaper-batch-structure-checker</module>
-        <module>newspaper-bitrepository-ingester</module>
-        <module>newspaper-delayed-batch-alerter</module>
-        <module>newspaper-digitisation-process-monitor</module>
-        <module>newspaper-md5-checker</module>
-        <module>newspaper-mfpak-integration</module>
-        <module>newspaper-ninestars-QA-suite</module>
-        <module>newspaper-parent</module>
-        <module>newspaper-prompt-doms-ingester</module>
-        <module>newspaper-statistics</module>
-        <module>newspaper-summa-batch-object-index</module>
-        <module>newspaper-workflow-restart-trigger</module>
-        <module>sbforge-parent</module>
-        <module>sbutil</module>
+        <module>doms-parent</module>
+        <module>doms-parent/doms-server</module>
+        <module>sbforge-parent/newspaper-parent/newspaper-batch-event-framework</module>
+        <module>sbforge-parent/newspaper-parent/newspaper-batch-metadata-checker</module>
+        <module>sbforge-parent/newspaper-parent/newspaper-batch-structure-checker</module>
+        <module>sbforge-parent/newspaper-parent/newspaper-bitrepository-ingester</module>
+        <module>sbforge-parent/newspaper-parent/newspaper-delayed-batch-alerter</module>
+        <module>sbforge-parent/newspaper-parent/newspaper-digitisation-process-monitor</module>
+        <module>sbforge-parent/newspaper-parent/newspaper-md5-checker</module>
+        <module>sbforge-parent/newspaper-parent/newspaper-mfpak-integration</module>
+        <module>sbforge-parent/newspaper-parent/newspaper-ninestars-QA-suite</module>
+        <module>sbforge-parent/newspaper-parent</module>
+        <module>sbforge-parent/newspaper-parent/newspaper-prompt-doms-ingester</module>
+        <module>sbforge-parent/newspaper-parent/newspaper-statistics</module>
+        <module>sbforge-parent/newspaper-parent/newspaper-summa-batch-object-index</module>
+        <module>sbforge-parent/newspaper-parent/newspaper-workflow-restart-trigger</module>
+        <module>sbforge-parent/sbutil</module>
         <!--
         <module>xmlTapesForFedora</module>
         -->
