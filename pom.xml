@@ -11,6 +11,7 @@
         <module>doms-parent</module>
         <module>doms-parent/doms-server</module>
         <module>doms-parent/xmlTapesForFedora</module>
+        <module>sbforge-parent</module>
         <module>sbforge-parent/newspaper-parent/newspaper-batch-event-framework</module>
         <module>sbforge-parent/newspaper-parent/newspaper-batch-metadata-checker</module>
         <module>sbforge-parent/newspaper-parent/newspaper-batch-structure-checker</module>
@@ -25,7 +26,8 @@
         <module>sbforge-parent/newspaper-parent/newspaper-statistics</module>
         <module>sbforge-parent/newspaper-parent/newspaper-summa-batch-object-index</module>
         <module>sbforge-parent/newspaper-parent/newspaper-workflow-restart-trigger</module>
-        <module>sbforge-parent/sbutil</module>
+        <module>sbforge-parent-12</module>
+        <module>sbforge-parent-12/sbutil</module>
     </modules>
 
 </project>
