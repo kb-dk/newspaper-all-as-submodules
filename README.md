@@ -28,3 +28,5 @@ For now run these commands to get a buildable tree:
     (cd doms-parent && git clone $OPTIONS https://github.com/statsbiblioteket/doms-pid-generator.git && git -C doms-pid-generator checkout pidgenerator-1.0.1 )
     (cd doms-parent && git clone $OPTIONS https://github.com/statsbiblioteket/xmlTapesForFedora )
     (cd doms-parent && git clone $OPTIONS https://github.com/statsbiblioteket/jtar.git && git -C jtar jtar-2.3 )
+
+Important note:  Use Java 7 for now as doms-pid-generator cannot compile with Java 8 due to increased security in WSImport.
