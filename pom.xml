@@ -10,6 +10,9 @@
     <modules>
         <module>doms-parent</module>
         <module>doms-parent/doms-server</module>
+        <module>doms-parent/doms-ecm-lib</module>
+        <module>doms-parent/doms-pid-generator</module>
+        <module>doms-parent/jtar</module>
         <module>doms-parent/xmlTapesForFedora</module>
         <module>sbforge-parent</module>
         <module>sbforge-parent/newspaper-parent/newspaper-batch-event-framework</module>
