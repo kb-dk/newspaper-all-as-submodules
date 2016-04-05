@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>dk.statsbiblioteket.newspaper</groupId>
+    <artifactId>newspaper-all-as-submodules</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>doms-server</module>
+        <module>newspaper-batch-event-framework</module>
+        <module>newspaper-batch-metadata-checker</module>
+        <module>newspaper-batch-structure-checker</module>
+        <module>newspaper-bitrepository-ingester</module>
+        <module>newspaper-delayed-batch-alerter</module>
+        <module>newspaper-digitisation-process-monitor</module>
+        <module>newspaper-md5-checker</module>
+        <module>newspaper-mfpak-integration</module>
+        <module>newspaper-ninestars-QA-suite</module>
+        <module>newspaper-parent</module>
+        <module>newspaper-prompt-doms-ingester</module>
+        <module>newspaper-statistics</module>
+        <module>newspaper-summa-batch-object-index</module>
+        <module>newspaper-workflow-restart-trigger</module>
+        <module>sbforge-parent</module>
+        <module>sbutil</module>
+        <module>xmlTapesForFedora</module>
+    </modules>
+
+</project>
