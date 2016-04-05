@@ -25,7 +25,9 @@
         <module>newspaper-workflow-restart-trigger</module>
         <module>sbforge-parent</module>
         <module>sbutil</module>
+        <!--
         <module>xmlTapesForFedora</module>
+        -->
     </modules>
 
 </project>
