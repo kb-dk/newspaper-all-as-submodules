@@ -6,7 +6,8 @@ For now run these commands to get a buildable tree:
     export OPTIONS=""
     (git clone $OPTIONS https://github.com/statsbiblioteket/sbforge-parent.git && git -C sbforge-parent checkout sbforge-parent-18 )
     (git clone $OPTIONS https://github.com/statsbiblioteket/sbforge-parent.git sbforge-parent-12 && git -C sbforge-parent-12 checkout 6706ccb9f25354c3cc924ec5355056b2aced6754)
-    (cd sbforge-parent-12 && git clone $OPTIONS https://github.com/statsbiblioteket/sbutil.git && git -C sbutil checkout sbutil-0.5.29)
+    (cd sbforge-parent-12 && git clone $OPTIONS https://github.com/statsbiblioteket/sbutil.git sbutil-0.5.13 && git -C sbutil-0.5.13 checkout sbutil-0.5.13)
+    (cd sbforge-parent-12 && git clone $OPTIONS https://github.com/statsbiblioteket/sbutil.git sbutil-0.5.29 && git -C sbutil-0.5.29 checkout sbutil-0.5.29)
     (cd sbforge-parent-12 && git clone $OPTIONS https://github.com/statsbiblioteket/jtar.git && git -C jtar checkout jtar-2.3 )
     (cd sbforge-parent && git clone $OPTIONS https://github.com/statsbiblioteket/newspaper-parent && git -C newspaper-parent checkout newspaper-parent-1.5)
     (cd sbforge-parent/newspaper-parent && git clone $OPTIONS https://github.com/statsbiblioteket/newspaper-batch-event-framework )
@@ -27,7 +28,8 @@ For now run these commands to get a buildable tree:
     (cd doms-parent && git clone $OPTIONS https://github.com/statsbiblioteket/doms-server.git && git -C doms-server checkout central-1.17 )
     (cd doms-parent && git clone $OPTIONS https://github.com/statsbiblioteket/doms-ecm-lib.git && git -C doms-ecm-lib checkout doms-ecm-lib-1.11 )
     (cd doms-parent && git clone $OPTIONS https://github.com/statsbiblioteket/xmlTapesForFedora )
-    (cd doms-parent && git clone $OPTIONS https://github.com/statsbiblioteket/doms-util.git && git -C doms-util checkout domsutil-1.0 )
+    (cd doms-parent && git clone $OPTIONS https://github.com/statsbiblioteket/doms-util.git doms-util-1.0 && git -C doms-util-1.0 checkout domsutil-1.0 )
+    (cd doms-parent && git clone $OPTIONS https://github.com/statsbiblioteket/doms-util.git doms-util-1.1 && git -C doms-util-1.1 checkout domsutil-1.1 )
     (cd doms-parent && git clone $OPTIONS https://github.com/statsbiblioteket/doms-auth-checker.git && git -C doms-auth-checker authchecker-1.1)
     (cd doms-parent && git clone $OPTIONS https://github.com/statsbiblioteket/doms-update-tracker.git && git -C doms-update-tracker checkout updatetracker-1.10)
 

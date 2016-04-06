@@ -8,10 +8,15 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>sbforge-parent-12</module>
+        <module>sbforge-parent-12/sbutil-0.5.13</module>
+        <module>sbforge-parent-12/sbutil-0.5.29</module>
+        <module>sbforge-parent-12/jtar</module>
         <module>doms-parent</module>
         <module>doms-parent/doms-server</module>
         <module>doms-parent/doms-ecm-lib</module>
-        <module>doms-parent/doms-util</module>
+        <module>doms-parent/doms-util-1.0</module>
+        <module>doms-parent/doms-util-1.1</module>
         <module>doms-parent/doms-auth-checker</module>
         <module>doms-parent/doms-update-tracker</module>
         <module>doms-parent/xmlTapesForFedora</module>
@@ -32,9 +37,6 @@
         <module>sbforge-parent/newspaper-parent/newspaper-statistics</module>
         <module>sbforge-parent/newspaper-parent/newspaper-summa-batch-object-index</module>
         <module>sbforge-parent/newspaper-parent/newspaper-workflow-restart-trigger</module>
-        <module>sbforge-parent-12</module>
-        <module>sbforge-parent-12/sbutil</module>
-        <module>sbforge-parent-12/jtar</module>
     </modules>
 
 </project>
