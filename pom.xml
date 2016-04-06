@@ -15,12 +15,12 @@
         <module>doms-parent</module>
         <module>doms-parent/doms-server</module>
         <module>doms-parent/doms-ecm-lib</module>
-        <module>doms-parent/doms-util-1.0</module>
         <module>doms-parent/doms-util-1.1</module>
         <module>doms-parent/doms-auth-checker</module>
         <module>doms-parent/xmlTapesForFedora</module>
         <module>doms-parent-1.0</module>
         <module>doms-parent-1.0/doms-pid-generator</module>
+        <module>doms-parent-1.0/doms-util-1.0</module>
         <module>sbforge-parent</module>
         <module>sbforge-parent/newspaper-parent/newspaper-batch-event-framework</module>
         <module>sbforge-parent/newspaper-parent/newspaper-batch-metadata-checker</module>
