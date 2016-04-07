@@ -70,8 +70,6 @@ For now run these commands to get a buildable tree:
 
 #TODO - add instructions on source modifications to make build succeed#
 
-#TODO - add notes on IntelliJ#
-
 #TODO - add notes on Eclipse#
 
 Install missing artifacts with:
@@ -104,7 +102,12 @@ with a pointer to Duraspace where the Fedora Commons artifacts are available)
       <activeProfile>duraspace-as-sbforge</activeProfile>
     </activeProfiles>
 
-Compile sources with:
+IntelliJ:
+
+Invalidate and restart, before opening up the source project.
+
+
+Command line:
 
     mvn -e -Dmaven.compiler.fork=true -DskipTests clean install
 
