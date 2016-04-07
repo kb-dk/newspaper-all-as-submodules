@@ -17,14 +17,7 @@ adding these lines to /etc/hosts
     # do not download from sbforge or repo.aduna-software.org
     127.0.0.1 sbforge.org repo.aduna-software.org
 
-
-
-
-
 For now run these commands to get a buildable tree:
-
-    mvn install:install-file -Dfile=not-in-central/jta-1.0.1B.jar -DgroupId=javax.transaction -DartifactId=jta -Dversion=1.0.1B  -Dpackaging=jar
-    mvn install:install-file -Dfile=not-in-central/postgresql-9.2-1002.jdbc4.jar -DgroupId=postgresql -DartifactId=postgresql -Dversion=9.2-1002.jdbc4  -Dpackaging=jar
 
     export OPTIONS=""
     (git clone $OPTIONS https://github.com/statsbiblioteket/sbforge-parent.git && git -C sbforge-parent checkout sbforge-parent-18 )
@@ -68,7 +61,7 @@ For now run these commands to get a buildable tree:
     (cd doms-parent && git clone $OPTIONS https://github.com/statsbiblioteket/doms-ecm-lib.git && git -C doms-ecm-lib checkout doms-ecm-lib-1.11 )
     (cd doms-parent && git clone $OPTIONS https://github.com/statsbiblioteket/xmlTapesForFedora )
     (cd doms-parent && git clone $OPTIONS https://github.com/statsbiblioteket/doms-util.git doms-util-1.1 && git -C doms-util-1.1 checkout domsutil-1.1 )
-    (cd doms-parent && git clone $OPTIONS https://github.com/statsbiblioteket/doms-auth-checker.git && git -C doms-auth-checker authchecker-1.1)
+    (cd doms-parent && git clone $OPTIONS https://github.com/statsbiblioteket/doms-auth-checker.git && git -C doms-auth-checker checkout authchecker-1.1 )
     (cd doms-parent && git clone $OPTIONS https://github.com/statsbiblioteket/doms-update-tracker.git && git -C doms-update-tracker checkout updatetracker-1.10)
 
     git clone $OPTIONS https://github.com/statsbiblioteket/doms-parent.git doms-parent-1.0 && git -C doms-parent-1.0 checkout doms-1.0
@@ -81,6 +74,35 @@ For now run these commands to get a buildable tree:
 
 #TODO - add notes on Eclipse#
 
+Install missing artifacts with:
+
+    mvn install:install-file -Dfile=not-in-central/jta-1.0.1B.jar -DgroupId=javax.transaction -DartifactId=jta -Dversion=1.0.1B  -Dpackaging=jar
+    mvn install:install-file -Dfile=not-in-central/postgresql-9.2-1002.jdbc4.jar -DgroupId=postgresql -DartifactId=postgresql -Dversion=9.2-1002.jdbc4  -Dpackaging=jar
+
+Work around repository configurations in sources by ensuring the following snippet
+is present in $HOME/.m2/settings.xml (which overrides sbforge-nexus entries
+with a pointer to Duraspace where the Fedora Commons artifacts are available)
+(See http://stackoverflow.com/a/20520713/53897)
+
+    <profile>
+       <id>duraspace-as-sbforge</id>
+
+       <!--Enable snapshots for the built in central repo to direct -->
+       <!--all requests to nexus via the mirror -->
+       <repositories>
+	      <repository>
+	        <id>sbforge-nexus</id>
+            <name>Duraspace Thirdparty Maven Repository</name>
+            <url>https://m2.duraspace.org/content/repositories/thirdparty</url>
+	        <releases><enabled>true</enabled></releases>
+	        <snapshots><enabled>false</enabled></snapshots>
+	      </repository>
+       </repositories>
+    </profile>
+    ....
+    <activeProfiles>
+      <activeProfile>duraspace-as-sbforge</activeProfile>
+    </activeProfiles>
 
 Compile sources with:
 
