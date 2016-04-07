@@ -3,16 +3,23 @@ newspaper project with all components as submodules for easier handling
 
 Important:
 
+* Fedora Commons artifacts are hosted on DuraSpace, not in Maven Central!
 * Do not use Maven 3.3.3 - there appears to be a bug triggered by domsutil-webservice-common
-* Use Java 7 to build, and not Java 8.
+* Use Java 7 to build, and not Java 8, and increase PermGen size.
 
     export JAVA_HOME=$HOME/gnu/jdk1.7.0_79/
+    export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=128m"
+
 
 To avoid hitting the defunct repository pulled in by fedora and to avoid sbforge.org consider
 adding these lines to /etc/hosts
 
     # do not download from sbforge or repo.aduna-software.org
     127.0.0.1 sbforge.org repo.aduna-software.org
+
+
+
+
 
 For now run these commands to get a buildable tree:
 
@@ -67,3 +74,15 @@ For now run these commands to get a buildable tree:
     git clone $OPTIONS https://github.com/statsbiblioteket/doms-parent.git doms-parent-1.0 && git -C doms-parent-1.0 checkout doms-1.0
     (cd doms-parent-1.0 && git clone $OPTIONS https://github.com/statsbiblioteket/doms-pid-generator.git && git -C doms-pid-generator checkout pidgenerator-1.0.1 )
     (cd doms-parent-1.0 && git clone $OPTIONS https://github.com/statsbiblioteket/doms-util.git doms-util-1.0 && git -C doms-util-1.0 checkout domsutil-1.0 )
+
+#TODO - add instructions on source modifications to make build succeed#
+
+#TODO - add notes on IntelliJ#
+
+#TODO - add notes on Eclipse#
+
+
+Compile sources with:
+
+    mvn -e -Dmaven.compiler.fork=true -DskipTests clean install
+
