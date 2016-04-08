@@ -3,6 +3,9 @@ newspaper project with all components as submodules for easier handling
 
 Important:
 
+Note: For now all commands work on TRA's Ubuntu 15.10 box.  Adapt as
+appropriate for other platforms.
+
 * Fedora Commons artifacts are hosted on DuraSpace, not in Maven Central!
 * Do not use Maven 3.3.3 - there appears to be a bug triggered by domsutil-webservice-common
 * Use Java 7 to build, and not Java 8, and increase PermGen size.
@@ -102,12 +105,15 @@ with a pointer to Duraspace where the Fedora Commons artifacts are available)
       <activeProfile>duraspace-as-sbforge</activeProfile>
     </activeProfiles>
 
+
 IntelliJ:
 
-Invalidate and restart, before opening up the source project.
+Invalidate and restart, before opening up the source project.  Disable
+"dockerintegrationtests" profile and disable the test button before
+actually invoking maven from inside IntelliJ.
 
 
 Command line:
 
-    mvn -e -Dmaven.compiler.fork=true -DskipTests clean install
+    mvn -e -Dmaven.compiler.fork=true -DskipTests '-P!dockerintegrationtests' clean install
 
