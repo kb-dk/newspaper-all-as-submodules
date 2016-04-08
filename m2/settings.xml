@@ -1,0 +1,45 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      https://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+    <localRepository>${env.PWD}/m2/repository</localRepository>
+
+    <profiles>
+        <profile>
+            <id>duraspace-as-sbforge</id>
+
+            <!--Enable snapshots for the built in central repo to direct -->
+            <!--all requests to nexus via the mirror -->
+            <repositories>
+                <repository>
+                    <id>local m2</id>
+                    <name>local m2</name>
+                    <url>file:///${user.home}/.m2/repository</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+                <repository>
+                    <id>sbforge-nexus</id>
+                    <name>Duraspace Thirdparty Maven Repository</name>
+                    <url>https://m2.duraspace.org/content/repositories/thirdparty</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+
+            </repositories>
+        </profile>
+    </profiles>
+    <activeProfiles>
+        <activeProfile>duraspace-as-sbforge</activeProfile>
+    </activeProfiles>
+</settings>
+
