@@ -8,6 +8,8 @@ appropriate for other platforms.
 
 * Fedora Commons artifacts are hosted on DuraSpace, not in Maven Central!
 * Do not use Maven 3.3.3 - there appears to be a bug triggered by domsutil-webservice-common
+* Ninestars QA tool not active, as it is linked against an older snapshot which would
+  make the tree unnecessarily complex and is unimportant to the purpose of this project.
 * Use Java 7 to build, and not Java 8, and increase PermGen size.
 
     export JAVA_HOME=$HOME/gnu/jdk1.7.0_79/
@@ -50,7 +52,6 @@ For now run these commands to get a buildable tree:
     (cd sbforge-parent/newspaper-parent && git clone $OPTIONS https://github.com/statsbiblioteket/newspaper-prompt-doms-ingester )
     (cd sbforge-parent/newspaper-parent && git clone $OPTIONS https://github.com/statsbiblioteket/newspaper-workflow-restart-trigger )
     (cd sbforge-parent/newspaper-parent && git clone $OPTIONS https://github.com/statsbiblioteket/newspaper-ninestars-QA-suite)
-    (cd sbforge-parent/newspaper-parent && git clone $OPTIONS https://github.com/statsbiblioteket/newspaper-summa-batch-object-index )
     (cd sbforge-parent/newspaper-parent && git clone $OPTIONS https://github.com/statsbiblioteket/newspaper-delayed-batch-alerter )
     (cd sbforge-parent/newspaper-parent && git clone $OPTIONS https://github.com/statsbiblioteket/newspaper-statistics )
 
@@ -71,9 +72,7 @@ For now run these commands to get a buildable tree:
     (cd doms-parent-1.0 && git clone $OPTIONS https://github.com/statsbiblioteket/doms-pid-generator.git && git -C doms-pid-generator checkout pidgenerator-1.0.1 )
     (cd doms-parent-1.0 && git clone $OPTIONS https://github.com/statsbiblioteket/doms-util.git doms-util-1.0 && git -C doms-util-1.0 checkout domsutil-1.0 )
 
-#TODO - add instructions on source modifications to make build succeed#
-
-#TODO - add notes on Eclipse#
+#TODO - add notes on Eclipse & Netbeans #
 
 Install missing artifacts with:
 

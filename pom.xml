@@ -34,26 +34,17 @@
 
         <module>sbforge-parent/newspaper-parent/newspaper-batch-event-framework</module>
         <module>sbforge-parent/newspaper-parent/newspaper-batch-metadata-checker</module>
-<!--
-        <module>sbforge-parent/newspaper-parent-1.2/newspaper-batch-metadata-checker-1.10-SNAPSHOT</module>
--->
-        <!--
-        <module>sbforge-parent/newspaper-parent/newspaper-batch-structure-checker</module>
-        -->
         <module>sbforge-parent/newspaper-parent/newspaper-bitrepository-ingester</module>
         <module>sbforge-parent/newspaper-parent/newspaper-delayed-batch-alerter</module>
         <module>sbforge-parent/newspaper-parent/newspaper-digitisation-process-monitor</module>
         <module>sbforge-parent/newspaper-parent/newspaper-md5-checker</module>
         <module>sbforge-parent/newspaper-parent/newspaper-mfpak-integration</module>
-        <!-- bad dependency!
+        <!--
         <module>sbforge-parent/newspaper-parent/newspaper-ninestars-QA-suite</module>
         -->
         <module>sbforge-parent/newspaper-parent</module>
         <module>sbforge-parent/newspaper-parent/newspaper-prompt-doms-ingester</module>
         <module>sbforge-parent/newspaper-parent/newspaper-statistics</module>
-<!--
-        <module>sbforge-parent/newspaper-parent/newspaper-summa-batch-object-index</module>
-        -->
         <module>sbforge-parent/newspaper-parent/newspaper-workflow-restart-trigger</module>
 
     </modules>
