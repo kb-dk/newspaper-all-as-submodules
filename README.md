@@ -72,18 +72,24 @@ For now run these commands to get a buildable tree:
     (cd doms-parent-1.0 && git clone $OPTIONS https://github.com/statsbiblioteket/doms-pid-generator.git && git -C doms-pid-generator checkout pidgenerator-1.0.1 )
     (cd doms-parent-1.0 && git clone $OPTIONS https://github.com/statsbiblioteket/doms-util.git doms-util-1.0 && git -C doms-util-1.0 checkout domsutil-1.0 )
 
-#TODO - add notes on Eclipse & Netbeans #
 
-Install missing artifacts with:
+
+Install missing artifacts:
+--
 
     mvn install:install-file -Dfile=not-in-central/jta-1.0.1B.jar -DgroupId=javax.transaction -DartifactId=jta -Dversion=1.0.1B  -Dpackaging=jar
     mvn install:install-file -Dfile=not-in-central/postgresql-9.2-1002.jdbc4.jar -DgroupId=postgresql -DartifactId=postgresql -Dversion=9.2-1002.jdbc4  -Dpackaging=jar
+
+Work around repository configurations:
+---
 
 Work around repository configurations in sources by ensuring the following snippet
 is present in $HOME/.m2/settings.xml (which overrides sbforge-nexus entries
 with a pointer to Duraspace where the Fedora Commons artifacts are available)
 (See http://stackoverflow.com/a/20520713/53897)
 
+    <settings>
+    <profiles>
     <profile>
        <id>duraspace-as-sbforge</id>
 
@@ -99,20 +105,35 @@ with a pointer to Duraspace where the Fedora Commons artifacts are available)
 	      </repository>
        </repositories>
     </profile>
-    ....
+    </profiles>
     <activeProfiles>
       <activeProfile>duraspace-as-sbforge</activeProfile>
     </activeProfiles>
-
+    </settings>
 
 IntelliJ:
+---
 
 Invalidate and restart, before opening up the source project.  Disable
 "dockerintegrationtests" profile and disable the test button before
 actually invoking maven from inside IntelliJ.
 
+Eclipse:
+---
+
+Importing existing maven projects in Eclipse 4.5.2 triggers a known bug, and 
+importing fails.  
+
+Netbeans:
+----
+Remember to set netbeans_jdkhome to a Java 7 JDK before launching Netbeans.
+In the Tools->Options->Java->Maven panel set "Global Execution Options" to
+
+    -DskipTests -P!dockerintegrationtests -P!RedisIntegrationTests -P!PostgresIntegrationTests
+
 
 Command line:
+---
 
-    mvn -e -Dmaven.compiler.fork=true -DskipTests '-P!dockerintegrationtests' clean install
+    mvn -e -Dmaven.compiler.fork=true -DskipTests '-P!dockerintegrationtests' '-P!RedisIntegrationTests' '-P!PostgresIntegrationTests' -Dintegration.test.newspaper.properties=`pwd`/empty.properties clean install
 
