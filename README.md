@@ -4,16 +4,32 @@ newspaper project with all components as submodules for easier handling
 Important:
 
 Note: For now all commands work on TRA's Ubuntu 15.10 box.  Adapt as
-appropriate for other platforms.
+appropriate for other platforms.  Two issues prohibit compiling with
+Java 8 - increased security with wsimport, and more restrictive javadoc.
+Note that OpenJDK 7 has certificate problems with some maven repositories.
 
 * Fedora Commons artifacts are hosted on DuraSpace, not in Maven Central!
 * Do not use Maven 3.3.3 - there appears to be a bug triggered by domsutil-webservice-common
 * Ninestars QA tool not active, as it is linked against an older snapshot which would
   make the tree unnecessarily complex and is unimportant to the purpose of this project.
-* Use Java 7 to build, and not Java 8, and increase PermGen size.
+* For Ubuntu, download Java 7 from Oracle, and increase PermGen size.
 
     export JAVA_HOME=$HOME/gnu/jdk1.7.0_79/
     export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=128m"
+
+* For OS X, download the latest Java 7 from http://www.azul.com/downloads/zulu/zulu-mac/
+(and the corresponding CCK from http://www.azul.com/products/zulu/cck-downloads/), and increase PermGen size.
+
+
+    export JAVA_HOME=/Users/ravn/gnu/zulu7.13.0.1-jdk7.0.95-macosx_x64
+    export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=128m"
+
+
+* When compiling with OpenJDK, open `sbforge-parent/reference/bitrepository-core/src/main/java/org/bitrepository/common/utils/FileSizeUtils.java`
+and comment out the unused import in line 24:
+
+
+    // import sun.nio.ch.DevPollSelectorProvider;
 
 
 To avoid hitting the defunct repository pulled in by fedora and to avoid sbforge.org consider
@@ -135,5 +151,5 @@ In the Tools->Options->Java->Maven panel set "Global Execution Options" to
 Command line:
 ---
 
-    mvn -e -Dmaven.compiler.fork=true -DskipTests '-P!dockerintegrationtests' '-P!RedisIntegrationTests' '-P!PostgresIntegrationTests' -Dintegration.test.newspaper.properties=`pwd`/empty.properties clean install
+    mvn -q -e -Dmaven.compiler.fork=true -DskipTests '-P!dockerintegrationtests' '-P!RedisIntegrationTests' '-P!PostgresIntegrationTests' -Dintegration.test.newspaper.properties=`pwd`/empty.properties clean install
 
