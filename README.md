@@ -72,6 +72,7 @@ For now run these commands to get a buildable tree:
     (cd sbforge-parent/newspaper-parent && git clone $OPTIONS https://github.com/statsbiblioteket/newspaper-statistics )
     (cd sbforge-parent/newspaper-parent && git clone $OPTIONS https://github.com/statsbiblioteket/newspaper-hadoop-jpylyzer.git)
     (cd sbforge-parent/newspaper-parent && git clone $OPTIONS https://github.com/statsbiblioteket/newspaper-hadoop-dissemination.git)
+    (cd sbforge-parent/newspaper-parent && git clone $OPTIONS https://github.com/statsbiblioteket/newspaper-batch-trigger.git)
 
     (cd sbforge-parent && git clone $OPTIONS https://github.com/statsbiblioteket/newspaper-parent newspaper-parent-1.2 && git -C newspaper-parent-1.2 checkout newspaper-parent-1.2)
     (cd sbforge-parent/newspaper-parent-1.2 && git clone $OPTIONS https://github.com/statsbiblioteket/newspaper-batch-metadata-checker newspaper-batch-metadata-checker-1.10-SNAPSHOT && git -C newspaper-batch-metadata-checker-1.10-SNAPSHOT checkout fa3f65a1d14cdaf23ae25536cf869a91db9fc869 )

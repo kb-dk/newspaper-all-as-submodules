@@ -32,8 +32,10 @@
         <module>sbforge-parent/reference</module> <!-- bit repository reference -->
         <module>sbforge-parent-15/message-xml</module> <!-- bit repository message xml -->
 
+        <module>sbforge-parent/newspaper-parent/newspaper-batch-trigger</module>
         <module>sbforge-parent/newspaper-parent/newspaper-batch-event-framework</module>
         <module>sbforge-parent/newspaper-parent/newspaper-batch-metadata-checker</module>
+        <module>sbforge-parent/newspaper-parent/newspaper-batch-structure-checker-1.10-SNAPSHOT</module>
         <module>sbforge-parent/newspaper-parent/newspaper-bitrepository-ingester</module>
         <module>sbforge-parent/newspaper-parent/newspaper-delayed-batch-alerter</module>
         <module>sbforge-parent/newspaper-parent/newspaper-digitisation-process-monitor</module>
