@@ -39,7 +39,6 @@
         <module>sbforge-parent/newspaper-parent/newspaper-bitrepository-ingester</module>
         <module>sbforge-parent/newspaper-parent/newspaper-delayed-batch-alerter</module>
         <module>sbforge-parent/newspaper-parent/newspaper-digitisation-process-monitor</module>
-        <module>sbforge-parent/newspaper-parent/newspaper-md5-checker</module>
         <module>sbforge-parent/newspaper-parent/newspaper-mfpak-integration</module>
         <module>sbforge-parent/newspaper-parent/newspaper-hadoop-jpylyzer</module>
         <module>sbforge-parent/newspaper-parent/newspaper-hadoop-dissemination</module>
