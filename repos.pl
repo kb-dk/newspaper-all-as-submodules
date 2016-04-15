@@ -28,7 +28,8 @@ doms-parent-1.0/doms-pid-generator https://github.com/statsbiblioteket/doms-pid-
 doms-parent-1.0/doms-util-1.0 https://github.com/statsbiblioteket/doms-util.git domsutil-1.0
 doms-parent/doms-auth-checker https://github.com/statsbiblioteket/doms-auth-checker.git authchecker-1.1
 doms-parent/doms-ecm-lib https://github.com/statsbiblioteket/doms-ecm-lib.git doms-ecm-lib-1.11
-doms-parent/doms-server https://github.com/statsbiblioteket/doms-server.git central-1.17
+doms-parent/doms-server https://github.com/statsbiblioteket/doms-server.git master
+doms-parent/doms-server-1.17 https://github.com/statsbiblioteket/doms-server.git central-1.17
 doms-parent/doms-update-tracker https://github.com/statsbiblioteket/doms-update-tracker.git updatetracker-1.10
 doms-parent/doms-util-1.1 https://github.com/statsbiblioteket/doms-util.git domsutil-1.1
 doms-parent/xmlTapesForFedora https://github.com/statsbiblioteket/xmlTapesForFedora master
