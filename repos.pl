@@ -11,7 +11,7 @@ while(<DATA>) {
     # print "path = $path, repo = $repo, checkout = $checkout\n";
     $encoded_repo = $repo;
     $encoded_repo =~ s/([^a-z0-9])/"_".sprintf("%X",ord($1))/eg;
-    $repodir = "git/$encoded_repo";
+    $repodir = "git-mirrors/$encoded_repo";
 
     if (!$repo_seen_before{$repo}++) {
 	print "if [ -d $repodir ]; then echo already mirrored - fetch; else git clone --mirror $repo $repodir; fi\n"; # fetch?
