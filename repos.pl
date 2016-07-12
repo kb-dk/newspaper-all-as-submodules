@@ -30,7 +30,8 @@ doms-parent/doms-auth-checker https://github.com/statsbiblioteket/doms-auth-chec
 doms-parent/doms-ecm-lib https://github.com/statsbiblioteket/doms-ecm-lib.git doms-ecm-lib-1.11
 doms-parent/doms-server https://github.com/statsbiblioteket/doms-server.git master
 doms-parent/doms-server-1.17 https://github.com/statsbiblioteket/doms-server.git central-1.17
-doms-parent/doms-update-tracker https://github.com/statsbiblioteket/doms-update-tracker.git updatetracker-1.10
+# doms-parent/doms-update-tracker https://github.com/statsbiblioteket/doms-update-tracker.git master
+doms-parent/doms-update-tracker-1.10 https://github.com/statsbiblioteket/doms-update-tracker.git updatetracker-1.10
 doms-parent/doms-util-1.1 https://github.com/statsbiblioteket/doms-util.git domsutil-1.1
 doms-parent/xmlTapesForFedora https://github.com/statsbiblioteket/xmlTapesForFedora master
 sbforge-parent https://github.com/statsbiblioteket/sbforge-parent.git sbforge-parent-18
@@ -47,7 +48,7 @@ sbforge-parent/newspaper-parent-1.2 https://github.com/statsbiblioteket/newspape
 sbforge-parent/newspaper-parent-1.2/newspaper-batch-metadata-checker-1.10-SNAPSHOT https://github.com/statsbiblioteket/newspaper-batch-metadata-checker fa3f65a1d14cdaf23ae25536cf869a91db9fc869
 sbforge-parent/newspaper-parent/newspaper-batch-event-framework https://github.com/statsbiblioteket/newspaper-batch-event-framework master
 sbforge-parent/newspaper-parent/newspaper-batch-metadata-checker https://github.com/statsbiblioteket/newspaper-batch-metadata-checker master
-sbforge-parent/newspaper-parent/newspaper-batch-structure-checker-1.10-SNAPSHOT https://github.com/statsbiblioteket/newspaper-batch-structure-checker master
+sbforge-parent/newspaper-parent/newspaper-batch-structure-checker-1.09 https://github.com/statsbiblioteket/newspaper-batch-structure-checker master
 sbforge-parent/newspaper-parent/newspaper-batch-trigger https://github.com/statsbiblioteket/newspaper-batch-trigger.git master
 sbforge-parent/newspaper-parent/newspaper-bitrepository-ingester https://github.com/statsbiblioteket/newspaper-bitrepository-ingester master
 sbforge-parent/newspaper-parent/newspaper-delayed-batch-alerter https://github.com/statsbiblioteket/newspaper-delayed-batch-alerter master
