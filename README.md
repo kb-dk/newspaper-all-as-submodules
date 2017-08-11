@@ -1,3 +1,5 @@
+# NOTE: BITROTTED! GIT PROJECTS NO LONGER HANG TOGETHER AT THE POINTS STORED HERE..
+
 # newspaper-all-as-submodules
 newspaper project with all components as submodules for easier handling
 
